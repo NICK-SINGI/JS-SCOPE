@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Js Scope</h2>
+
+<p><b>fruitName</b> is undefined outside myFunction():</p>
+
+<p id="trial1"></p>
+
+<p id="trial2"></p>
+
+<script>
+myFunction();
+
+function myFunction() {
+  let fruitName = "mango";
+  document.getElementById("trial1").innerHTML = typeof fruitName + " " + fruitName;
+}
+
+document.getElementById("trial2").innerHTML = typeof fruitName;
+</script>
+
+</body>
+</html>
